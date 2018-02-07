@@ -1,16 +1,23 @@
 import React, {Component} from 'react';
+import Dropdown from 'react-dropdown';
 import './App.css';
 
 class App extends Component {
     render() {
+
+        const options = ['Invictus', 'Telsa', 'Sigma', 'Polaris'];
+        const defaultOption = options[0];
+
         return (
             <div className="App">
                 <header className="App-header">
                     <h1 className="App-title">Welcome to the LMB Metrics Dashboard</h1>
                 </header>
                 <p className="App-intro">
-                    Please select a topic below for further information.
+                    Please select a team below for further information.
                 </p>
+
+                <p><Dropdown options={options} onChange={this._onSelect} value="LMB Teams" /></p>
 
                 <div className="flex-container">
                     <div>Code Coverage
