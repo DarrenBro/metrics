@@ -23,7 +23,8 @@ class App extends Component {
             className="super-crazy-colors"
             name="caret-down"
             size="lg"
-            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }} />
+            style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+          />
         </span>
 
         <div className="flex-container">
